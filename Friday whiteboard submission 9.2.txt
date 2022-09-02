@@ -1,0 +1,21 @@
+// every element inside the string unique.
+// no arrays no array methods
+// must return a boolean
+// am able to assume string is all lowercase, not sure if that would matter anyway.
+// Utilized a Set which removes all duplicates and only transfers over unique elements. 
+// Compared the Set size to the original string length - if it's not equal return false.
+
+const originalString = "copyright";
+
+const unique = (str) => {                    
+    const setString = new Set(str);    
+    if (setString.size == str.length) {
+        return true;
+      } else {
+        return false;
+        
+    }
+}
+
+
+unique(originalString);
